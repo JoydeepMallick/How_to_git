@@ -83,7 +83,7 @@ This guide provides a step-by-step process to upload files from the command line
 
 7. It **might ask permission to use your github or ask you to sign in once on the screen for permissions** and then when all done, check the repo, its updated with all the commit messages you wrote.
 
-# ⚠AMoving Files to a Specific Folder in GitHub Repository
+# ⚠Moving Files to a Specific Folder in GitHub Repository
 
 ## Scenario
 
