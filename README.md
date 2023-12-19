@@ -172,7 +172,13 @@ The below steps explain such a scenario from beginning.
    ```
 
 
-# Pushing changes to file causes the old files in repo to delete👀
+# Overriding main branch with master branch👀
+   ```bash
+   git push -f github master:main
+   ```
+   **Purpose:** Forcefully pushes your local master branch to the remote main branch.
+   **Explanation:** This command **overwrites the remote main branch with your local master branch history, potentially discarding any changes that existed on the remote branch but not in your local branch**. Use it with caution, as it can lead to data loss if not coordinated with collaborators.
+   
 ```bash
 git init    <-------- intiliazing in master branch
 git add .   <-------- Stages all files in the current directory and its subdirectories for commit.
