@@ -171,6 +171,16 @@ The below steps explain such a scenario from beginning.
    git push -f github BranchName
    ```
 
+
+# Pushing changes to file causes the old files in repo to delete👀
+```bash
+git init    <-------- intiliazing in master branch
+git add .   <-------- Stages all files in the current directory and its subdirectories for commit.
+git commit -m "commited"    <-------- Commits the staged changes with a descriptive message
+git remote add github https://github.com/userName/repoName.git    <-------- Connects your local repository to a remote repository on GitHub.
+git fetch github main     <-------- Fetches the latest changes from the remote main branch.
+git push -f github master:main    <--------- Forcefully pushes your local master branch to the remote main branch.
+```
 ### 👀👀👀
 
 Helpful resources :-
