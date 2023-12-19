@@ -183,7 +183,7 @@ The below steps explain such a scenario from beginning.
    **Explanation:** This command **overwrites the remote main branch with your local master branch history, potentially discarding any changes that existed on the remote branch but not in your local branch**. Use it with caution, as it can lead to data loss if not coordinated with collaborators.
    
 ```bash
-git init                                                          <-------- intiliazing in master branch
+git init                                                          <-------- initializing in master branch
 git add .                                                         <-------- Stages all files in the current directory and its subdirectories for commit.
 git commit -m "commited"                                          <-------- Commits the staged changes with a descriptive message
 git remote add github https://github.com/userName/repoName.git    <-------- Connects your local repository to a remote repository on GitHub.
