@@ -24,32 +24,32 @@ This guide provides a step-by-step of using Git CLI to manipulate github.
    
       To obtain a personal access token on GitHub, follow these steps:
 
-      i. Visit GitHub:
+      i. **Visit GitHub:**
          Open your web browser and go to GitHub.
 
-      ii. Sign In:
+      ii. **Sign In:**
           If you're not already signed in, sign in to your GitHub account.
 
-      iii. Go to Settings:
+      iii. **Go to Settings:**
           Click on your profile picture in the top right corner of the page, and from the dropdown menu, select "Settings."
 
-      iv. Navigate to Developer Settings:
+      iv. **Navigate to Developer Settings:**
           In the left sidebar, click on "Developer settings."
 
-      v. Create a Personal Access Token:
+      v. **Create a Personal Access Token:**
            Click on "Personal access tokens" in the left sidebar.
-           Click the "Generate token" button.
+           Click the **"Generate token"** button.
 
-      vi. Configure the Token:
+      vi. **Configure the Token:**
            Enter a name for your token.
-           Select the desired scopes for your token. For creating repositories, you'll need at least the "repo" scope.
+           Select the desired scopes for your token. For creating repositories, you'll need at least the `"repo"` scope.
            Click the "Generate token" button.
 
-      vii. Copy the Token:
+      vii. **Copy the Token:**
           After generating the token, copy it immediately. This is the only time GitHub will display the token, so make sure to store it securely.
    
 
-      Once you have the token, you can use it for authentication when making requests to the GitHub API, as demonstrated in the curl command example.
+      Once you have the token, you can use it for authentication when making requests to the GitHub API for the limited time you keep it active, as demonstrated in the curl command example.
 
 2. #### **Navigate to the Project Folder:**
 
