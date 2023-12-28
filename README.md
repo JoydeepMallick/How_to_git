@@ -194,9 +194,10 @@ git push -f github master:main                                    <-------- Forc
 
 Helpful resources :-
 
-1. https://stackoverflow.com/questions/10904339/github-fatal-remote-origin-already-exists
-2. https://www.youtube.com/watch?v=H4mp_aYK5bA
-3. Merging problems - https://stackoverflow.com/questions/68460171/how-to-merge-master-branch-into-main
-4. Merging problems - https://www.educative.io/answers/the-fatal-refusing-to-merge-unrelated-histories-git-error
+1. https://www.varonis.com/blog/how-to-merge-in-git
+2. https://stackoverflow.com/questions/10904339/github-fatal-remote-origin-already-exists
+3. https://www.youtube.com/watch?v=H4mp_aYK5bA
+4. Merging problems - https://stackoverflow.com/questions/68460171/how-to-merge-master-branch-into-main
+5. Merging problems - https://www.educative.io/answers/the-fatal-refusing-to-merge-unrelated-histories-git-error
 
 Youtube video coming soon, [click me!](./do_not_open/about_to_meet_god_soon.gif)
