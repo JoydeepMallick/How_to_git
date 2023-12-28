@@ -3,6 +3,7 @@
 ## Introduction
 
 This guide provides a step-by-step of using Git CLI to manipulate github.
+The 👁😦 answer of stackoverflow :- [👀👀👀](https://stackoverflow.com/questions/65924087/github-problem-git-pushes-to-master-branch-not-main-and-cant-merge-the-two)
 
 ## Prerequisites
 
