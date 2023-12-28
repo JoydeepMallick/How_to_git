@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This guide provides a step-by-step process to upload files from the command line using Git and push them to a GitHub repository.
+This guide provides a step-by-step of using Git CLI to manipulate github.
 
 ## Prerequisites
 
@@ -10,6 +10,43 @@ This guide provides a step-by-step process to upload files from the command line
 - A GitHub account.
 
 ## Steps
+
+1. <h3>Create a new repository via github CLI</h3>
+
+   Using `curl` command we can access our github profile and then create a new repository, in order to access github account we need **Personal Access Tokens** for our github.
+   [Read more](https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#create-a-repository-for-the-authenticated-user)
+   ```bash
+   curl -u YourGithubUsername:YOUR_TOKEN https://api.github.com/user/repos -d '{"name":"YourRepositoryName"}'
+   ```
+   <h4>How to generate personal access tokens in github</h4>
+   
+   To obtain a personal access token on GitHub, follow these steps:
+
+    i. Visit GitHub:
+    Open your web browser and go to GitHub.
+
+    ii. Sign In:
+    If you're not already signed in, sign in to your GitHub account.
+
+    iii. Go to Settings:
+    Click on your profile picture in the top right corner of the page, and from the dropdown menu, select "Settings."
+
+    iv. Navigate to Developer Settings:
+    In the left sidebar, click on "Developer settings."
+
+    v. Create a Personal Access Token:
+        Click on "Personal access tokens" in the left sidebar.
+        Click the "Generate token" button.
+
+    vi. Configure the Token:
+        Enter a name for your token.
+        Select the desired scopes for your token. For creating repositories, you'll need at least the "repo" scope.
+        Click the "Generate token" button.
+
+    vii. Copy the Token:
+    After generating the token, copy it immediately. This is the only time GitHub will display the token, so make sure to store it securely.
+
+   Once you have the token, you can use it for authentication when making requests to the GitHub API, as demonstrated in the curl command example.
 
 1. #### **Navigate to the Project Folder:**
 
