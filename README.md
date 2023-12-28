@@ -89,8 +89,18 @@ The 👁😦 answer of stackoverflow :- [👀👀👀](https://stackoverflow.com
    ```bash
    git commit -m "Your commit message here"
    ```
+6. #### **Default branch is Master so how to change it**
 
-6. #### **Add Remote Repository:**
+   Default branch where we push our files to is `master` but if you had created a new repository with a README file then the primary branch is `main`(can be changed later) and if no file in repository then **no primary branch** exists and in first push we can make our desired branch as primary. When you push to remote repository the default branch you push to is master which causes 2 branches if not master is the primary branch.
+
+   To set some branch as the primary branch before pushing :-
+
+   ```bash
+   git branch -M branchName
+   ```
+
+
+8. #### **Add Remote Repository:**
 
    Add the GitHub repository as a remote location. Replace _`GitHubUsername`_ and _`RepoName`_ with **your GitHub username** and **repository name**.
 
