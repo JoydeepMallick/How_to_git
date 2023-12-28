@@ -24,33 +24,34 @@ This guide provides a step-by-step of using Git CLI to manipulate github.
    
       To obtain a personal access token on GitHub, follow these steps:
 
-       i. Visit GitHub:
-          Open your web browser and go to GitHub.
+      i. Visit GitHub:
+         Open your web browser and go to GitHub.
 
-       ii. Sign In:
+      ii. Sign In:
           If you're not already signed in, sign in to your GitHub account.
 
-       iii. Go to Settings:
+      iii. Go to Settings:
           Click on your profile picture in the top right corner of the page, and from the dropdown menu, select "Settings."
 
-       iv. Navigate to Developer Settings:
+      iv. Navigate to Developer Settings:
           In the left sidebar, click on "Developer settings."
 
-       v. Create a Personal Access Token:
+      v. Create a Personal Access Token:
            Click on "Personal access tokens" in the left sidebar.
            Click the "Generate token" button.
 
-       vi. Configure the Token:
+      vi. Configure the Token:
            Enter a name for your token.
            Select the desired scopes for your token. For creating repositories, you'll need at least the "repo" scope.
            Click the "Generate token" button.
 
-       vii. Copy the Token:
+      vii. Copy the Token:
           After generating the token, copy it immediately. This is the only time GitHub will display the token, so make sure to store it securely.
+   
 
       Once you have the token, you can use it for authentication when making requests to the GitHub API, as demonstrated in the curl command example.
 
-1. #### **Navigate to the Project Folder:**
+2. #### **Navigate to the Project Folder:**
 
    Open the command prompt or terminal and navigate to the desired project folder using the `cd` command:
 
@@ -58,7 +59,7 @@ This guide provides a step-by-step of using Git CLI to manipulate github.
    cd path/to/your/project
    ```
 
-2. #### **Initialize Git Repository:**
+3. #### **Initialize Git Repository:**
 
    Run the following command to initialize a Git repository in the project folder. It creates a `.git` folder in pwd:
 
@@ -66,7 +67,7 @@ This guide provides a step-by-step of using Git CLI to manipulate github.
    git init
    ```
 
-3. #### **Add Files to Local Repository:**
+4. #### **Add Files to Local Repository:**
 
    Add files to the local repository using the git add command. You can either specify individual file names or use a space-separated list to add multiple files and folders.
 
@@ -80,7 +81,7 @@ This guide provides a step-by-step of using Git CLI to manipulate github.
    git add .
    ```
 
-4. #### **Commit the added files with a descriptive message:**
+5. #### **Commit the added files with a descriptive message:**
 
    Commit the changes to the local git repository initialised in present working directory.
 
@@ -88,7 +89,7 @@ This guide provides a step-by-step of using Git CLI to manipulate github.
    git commit -m "Your commit message here"
    ```
 
-5. #### **Add Remote Repository:**
+6. #### **Add Remote Repository:**
 
    Add the GitHub repository as a remote location. Replace _`GitHubUsername`_ and _`RepoName`_ with **your GitHub username** and **repository name**.
 
@@ -104,7 +105,7 @@ This guide provides a step-by-step of using Git CLI to manipulate github.
    git remote set-url github https://github.com/NewOrSameGitHubUsername/NewOrSameRepoName.git
    ```
 
-6. #### **Push Changes to GitHub Repository:**
+7. #### **Push Changes to GitHub Repository:**
 
    Push the committed changes to the GitHub repository. Replace `BranchName` with the branch you want to push (e.g., **master** or **main** or any other).
 
@@ -120,7 +121,9 @@ This guide provides a step-by-step of using Git CLI to manipulate github.
    git push -f github BranchName
    ```
 
-7. It **might ask permission to use your github or ask you to sign in once on the screen for permissions** and then when all done, check the repo, its updated with all the commit messages you wrote.
+8. It **might ask permission to use your github or ask you to sign in once on the screen for permissions** and then when all done, check the repo, its updated with all the commit messages you wrote.
+
+
 
 # ⚠Moving Files to a Specific Folder in GitHub Repository
 
