@@ -89,15 +89,57 @@ The 👁😦 answer of stackoverflow :- [👀👀👀](https://stackoverflow.com
    ```bash
    git commit -m "Your commit message here"
    ```
-6. #### **Default branch is Master so how to change it**
+6. #### **Default Branch and Changing It**[⚠Need repair, only about brnach not pushing]
 
-   Default branch where we push our files to is `master` but if you had created a new repository with a README file then the primary branch is `main`(can be changed later) and if no file in repository then **no primary branch** exists and in first push we can make our desired branch as primary. When you push to remote repository the default branch you push to is master which causes 2 branches if not master is the primary branch.
+   By default, the main branch in a Git repository is typically named master. However, GitHub has been transitioning to use main as the default branch name for new repositories. If you've created a new repository with a README file, GitHub might set the primary branch to main. If no files exist, there is no primary branch until the first push is made.
 
-   To set some branch as the primary branch before pushing :-
+   To change the default branch name or set a primary branch before pushing:
+
+   a. Check Current Branch:
+
+    ```bash
+    git branch
+    ```
+
+   This command shows the current local branches. The one with an asterisk (*) indicates the branch you are currently on.
+
+   b. Create and Switch to a New Branch:
+
+   ```bash
+   git checkout -b branchName
+   ```
+
+   Create and switch to a new branch named branchName.
+
+   c. Make Changes and Commit:
+
+   ```bash
+   # Make changes to your files
+   git add .
+   git commit -m "Initial commit on branchName"
+   ```
+   
+   d. Rename the Branch (Optional):
 
    ```bash
    git branch -M branchName
    ```
+   This step is optional and is used to rename the branch. The -M flag forces the rename.
+
+   e. Push Changes to Remote Repository:
+
+   ```bash
+    git push -u origin branchName
+   ```
+   Push the changes to the remote repository, setting up tracking for the branch.
+
+   f. Change Default Branch on GitHub:
+   Go to your GitHub repository on the web.
+   Navigate to "Settings" > "Branches."
+   Under "Default branch," select your desired default branch (e.g., branchName).
+   Confirm the change.
+
+   Now, your desired branch is set as the default branch for your repository. Subsequent pushes and pulls will use this branch as the default. Remember, these steps ensure that the branch you've created and pushed becomes the primary branch on GitHub.
 
 
 8. #### **Add Remote Repository:**
