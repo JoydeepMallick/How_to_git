@@ -18,35 +18,37 @@ This guide provides a step-by-step of using Git CLI to manipulate github.
    ```bash
    curl -u YourGithubUsername:YOUR_TOKEN https://api.github.com/user/repos -d '{"name":"YourRepositoryName"}'
    ```
+   **🔥NOTE🔥** : `curl` command works fine in windows via `wsl`(✔Checked and Verified), powershell does support curl but it has some weird behavior and command prompt does not have curl but curl can be seperately installed in system or via git bash terminal also its possible.
+   
    <h4>How to generate personal access tokens in github</h4>
    
-   To obtain a personal access token on GitHub, follow these steps:
+      To obtain a personal access token on GitHub, follow these steps:
 
-    i. Visit GitHub:
-    Open your web browser and go to GitHub.
+       i. Visit GitHub:
+          Open your web browser and go to GitHub.
 
-    ii. Sign In:
-    If you're not already signed in, sign in to your GitHub account.
+       ii. Sign In:
+          If you're not already signed in, sign in to your GitHub account.
 
-    iii. Go to Settings:
-    Click on your profile picture in the top right corner of the page, and from the dropdown menu, select "Settings."
+       iii. Go to Settings:
+          Click on your profile picture in the top right corner of the page, and from the dropdown menu, select "Settings."
 
-    iv. Navigate to Developer Settings:
-    In the left sidebar, click on "Developer settings."
+       iv. Navigate to Developer Settings:
+          In the left sidebar, click on "Developer settings."
 
-    v. Create a Personal Access Token:
-        Click on "Personal access tokens" in the left sidebar.
-        Click the "Generate token" button.
+       v. Create a Personal Access Token:
+           Click on "Personal access tokens" in the left sidebar.
+           Click the "Generate token" button.
 
-    vi. Configure the Token:
-        Enter a name for your token.
-        Select the desired scopes for your token. For creating repositories, you'll need at least the "repo" scope.
-        Click the "Generate token" button.
+       vi. Configure the Token:
+           Enter a name for your token.
+           Select the desired scopes for your token. For creating repositories, you'll need at least the "repo" scope.
+           Click the "Generate token" button.
 
-    vii. Copy the Token:
-    After generating the token, copy it immediately. This is the only time GitHub will display the token, so make sure to store it securely.
+       vii. Copy the Token:
+          After generating the token, copy it immediately. This is the only time GitHub will display the token, so make sure to store it securely.
 
-   Once you have the token, you can use it for authentication when making requests to the GitHub API, as demonstrated in the curl command example.
+      Once you have the token, you can use it for authentication when making requests to the GitHub API, as demonstrated in the curl command example.
 
 1. #### **Navigate to the Project Folder:**
 
